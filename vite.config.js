@@ -4,8 +4,10 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/tifahub/',
+  base: './',
   build: {
-    outDir: 'build'
+    outDir: 'build',
+    assetsDir: 'assets',
+    emptyOutDir: true,
   }
 })
